@@ -3,7 +3,7 @@
         "module": "commonjs",
         "target": "es6",
         "noImplicitAny": true,
-        "noImplicitThis": true,
+        "noImplicitThis": false,
         "strictNullChecks": true,
         "baseUrl": "../../",
         "typeRoots": [
@@ -11,13 +11,13 @@
         ],
         "types": [],
         "paths": {
-            "abs": ["abs/v0"]
+            "fullcalendar": ["fullcalendar/v1"]
         },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "abs-tests.ts"
+        "fullCalendar-tests.ts"
     ]
 }

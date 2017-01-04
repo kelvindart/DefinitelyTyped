@@ -1,7 +1,10 @@
-// Type definitions for Pixi.js 3.0.9 dev
+// Type definitions for Pixi.js 3.0
 // Project: https://github.com/GoodBoyDigital/pixi.js/
 // Definitions by: clark-stevenson <https://github.com/pixijs/pixi-typescript>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+
+export = PIXI;
+export as namespace PIXI;
 
 declare class PIXI {
 
@@ -1121,7 +1124,7 @@ declare namespace PIXI {
     ////////////////////////////EXTRAS////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////
 
-    export module extras {
+    export namespace extras {
 
         export interface BitmapTextStyle {
 
@@ -1204,9 +1207,9 @@ declare namespace PIXI {
             //See http://stackoverflow.com/questions/29593905/typescript-declaration-extending-class-with-static-method/29595798#29595798
             //Thanks bas!
             static fromFrame(frameId: string): Sprite;
-            static fromImage(imageId: string, crossorigin?: boolean, scaleMode?: number): Sprite;
-
             static fromFrame(frameId: string, width?: number, height?: number): TilingSprite;
+
+            static fromImage(imageId: string, crossorigin?: boolean, scaleMode?: number): Sprite;
             static fromImage(imageId: string, width?: number, height?: number, crossorigin?: boolean, scaleMode?: number): TilingSprite;
 
             protected _tileScaleOffset: Point;
@@ -1439,7 +1442,7 @@ declare namespace PIXI {
     ////////////////////////////INTERACTION///////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////
 
-    export module interaction {
+    export namespace interaction {
 
         export interface InteractionEvent {
 
@@ -1530,7 +1533,7 @@ declare namespace PIXI {
     //////////////////////////////////////////////////////////////////////////////
     //https://github.com/englercj/resource-loader/blob/master/src/Loader.js
 
-    export module loaders {
+    export namespace loaders {
         export interface LoaderOptions {
 
             crossOrigin?: boolean;
@@ -1630,7 +1633,7 @@ declare namespace PIXI {
     ///////////////////////////////MESH///////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////
 
-    export module mesh {
+    export namespace mesh {
 
         export class Mesh extends Container {
 
@@ -1741,8 +1744,4 @@ declare namespace PIXI {
         }
 
     }
-}
-
-declare module 'pixi.js' {
-    export = PIXI;
 }

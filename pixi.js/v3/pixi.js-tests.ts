@@ -1,5 +1,4 @@
-﻿/// <reference path="pixi.js.d.ts" />
-namespace basics {
+﻿namespace basics {
 
     export class Basics {
 

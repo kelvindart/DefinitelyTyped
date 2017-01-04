@@ -4,20 +4,20 @@
         "target": "es6",
         "noImplicitAny": true,
         "noImplicitThis": true,
-        "strictNullChecks": true,
+        "strictNullChecks": false,
         "baseUrl": "../../",
         "typeRoots": [
             "../../"
         ],
         "types": [],
         "paths": {
-            "abs": ["abs/v0"]
+            "pixi.js": ["pixi.js/v3"]
         },
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
         "index.d.ts",
-        "abs-tests.ts"
+        "pixi.js-tests.ts"
     ]
 }
