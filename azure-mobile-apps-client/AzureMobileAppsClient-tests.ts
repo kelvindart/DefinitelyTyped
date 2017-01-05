@@ -2,7 +2,7 @@
 
 
 //create base client istance and read properties
-var client = new WindowsAzure.MobileServiceClient("your-azure-mobile-application-URL", "your-azure-application-KEY");
+var client = new KDWindowsAzure.MobileServiceClient("your-azure-mobile-application-URL", "your-azure-application-KEY");
 console.log("Azure application URL: " + client.applicationUrl);
 console.log("Azure application KEY: " + client.applicationKey.replace(/./gi,'*')); //KEEP IT SECRET!!!
 
